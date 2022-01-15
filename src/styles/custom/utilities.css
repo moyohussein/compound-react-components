@@ -1,0 +1,34 @@
+@tailwind utilities;
+@layer utilities {
+    .bg-stripes {
+        background-image:linear-gradient(
+            45deg, 
+            transparent 25%, 
+            rgba(255,255,255,.15) 25%, 
+            rgba(255,255,255,.15) 50%, 
+            transparent 50%, 
+            transparent 75%, 
+            rgba(255,255,255,.15) 75%, 
+            rgba(255,255,255,.15) 100%
+        );
+        background-size: 20px 20px;
+    }
+    .bg-shimmer {
+        background-image: linear-gradient(
+            90deg,
+            rgba(233, 233, 233, 1) 0,
+            rgba(233, 233, 233, 0.9) 50%,
+            rgba(233, 233, 233, 0.8) 100%
+        );
+    }
+    .bg-skeleton {
+        background-image: linear-gradient(
+            -60deg, 
+            #949494 0, 
+            #949494 100px, 
+            rgba(255,255,255,1) 150px, 
+            #949494 200px, 
+            #949494 100%
+        )
+    }
+}

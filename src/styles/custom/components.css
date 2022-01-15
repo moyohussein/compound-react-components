@@ -1,0 +1,72 @@
+@tailwind components;
+@layer components {
+    .card-row {
+        @apply flex shadow-lg rounded-md;
+    }
+    .card-column {
+        @apply flex shadow-lg rounded-md;
+    }
+    .link {
+        @apply focus:ring-1 focus:ring-offset-2
+    }
+    .btn-animate {
+        @apply after:opacity-0 hover:after:content-['\2002\00bb'] hover:after:opacity-100 hover:after:transition-all hover:after:duration-200;
+    }
+    .base {
+        @apply capitalize inline-flex justify-center items-center drop-shadow text-center leading-none disabled:pointer-events-none disabled:focus:ring-0 disabled:opacity-40 font-semibold transition duration-200;
+    }
+    .btn-xs {
+        @apply px-2 h-6 text-[12px]; 
+    }
+    .btn-sm {
+        @apply px-4 h-8 text-[14px];
+    }
+    .btn-md {
+        @apply px-6 h-10 text-[16px];
+    }
+    .btn-lg {
+        @apply px-8 h-14 text-[18px];
+    }
+    .chip {
+        @apply text-xs font-normal inline-block py-1 px-2 capitalize;
+    }
+    .chip-icon {
+        @apply text-xs font-normal inline-flex justify-center items-center py-1 px-2 capitalize;
+    }
+    .overlay { 
+        @apply bg-black bg-opacity-50 fixed inset-0;
+    }
+    .input-xs {
+        @apply px-2 h-6 text-[12px];
+    }
+    .input-sm {
+        @apply px-3 h-8 text-[14px];
+    }
+    .input-md {
+        @apply px-4 h-10 text-[16px];
+    }
+    .input-lg {
+        @apply px-4 h-12 text-[16px];
+    }
+    .input-xl {
+        @apply px-[18px] h-14 text-[18px];
+    }
+    .input {
+        @apply appearance-none leading-tight disabled:pointer-events-none disabled:focus:ring-0 disabled:opacity-40 placeholder-opacity-20;
+    }
+    .input-container {
+        @apply h-auto w-full relative
+    }
+    .label-container {
+        @apply absolute top-[-15px] left-[5px] bg-main-light dark:bg-main-dark rounded-full px-2 inline-flex justify-center items-center
+    }
+    .label {
+        @apply text-[10px] tablet:text-[11px] laptop:text-[12px]
+    }
+    .overlay {
+        @apply bg-black bg-opacity-50 fixed flex left-0 right-0 bottom-0 top-0 z-[1000]
+    }
+    .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}

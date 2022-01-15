@@ -1,0 +1,23 @@
+@tailwind base;
+@layer base {
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+    h1 {
+        @apply text-2xl tablet:text-3xl laptop:text-4xl;
+    }
+    h2 {
+        @apply text-xl laptop:text-2xl;
+    }
+    h3 {
+        @apply text-lg laptop:text-xl;
+    }
+    p {
+        @apply text-xs tablet:text-sm laptop:text-base;
+    }
+    button,
+    input,
+    a {
+        @apply focus:outline-none;
+    }
+};
