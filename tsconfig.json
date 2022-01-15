@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@components*": [
+        "src/components*"
+      ],
+      "@animations*": [
+        "src/animations*"
+      ],
+      "@hooks*": [
+        "src/hooks*"
+      ],
+      "@pages*": [
+        "src/pages*"
+      ],
+      "@functions*": [
+        "src/functions*"
+      ],
+      "@interfaces*": [
+        "src/interfaces*"
+      ],
+      "@contexts*": [
+        "src/contexts*"
+      ],
+      "@styles*": [
+        "src/styles*"
+      ],
+      "@definitions*": [
+        "src/definitions*"
+      ]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "tailwind.config.js,",
+    "./src/**/*.{js,jsx,ts,tsx}"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
